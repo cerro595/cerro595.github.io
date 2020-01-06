@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Conversione temperatura</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    <h1>Conversione temperatura</h1>
+    <p id="sottopar">Pagina realizzata con l'utilizzo di jQuery</p>
+    <p>Inserisci la temperatura: <input id="temperatura" value="0"> ° </p>
+    <p><input class="btn" type="button" value="Converti in Fahrenheit" onclick="convertiTemperatura(0)">
+       <input class="btn" type="button" value="Converti in Celsius" onclick="convertiTemperatura(1)">
+        </p>
+        <p>La temperatura inserita corrisponde a <span id="risultato">...</span></p>
+    <h1>Conversione velocità</h1>
+    <p id="sottopar">Funzione realizzata con l'utilizzo di jQuery</p>
+        <p>Inserisci il tempo impiegato: <input id="min" value="0"> ' <input id="sec" value="10"> " </p>
+        <p>Inserisci lo spazio percorso: <input id="spazio" value="100"> metri </p>
+        <input class="btn" type="button" value="Calcola velocità media" onclick="velocita_media()">
+        <p>La velocità media è pari a <span id="vms">...</span> m/s,
+        <br> che corrisponde a <span id="vkmh">...</span> km/h.
+        </p>
+    </body>
+</html>
