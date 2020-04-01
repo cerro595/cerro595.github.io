@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Esempio dei moduli</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<ul>
+    <li> <a href="index.html">Previous page</a></li>
+   </ul>
+
+<fieldset>
+	<legend>Your details:</legend>
+	<label for="name">Name:</label>
+	<input type="text" name="name"><br>
+	<label for="email">Email:</label>
+	<input type="email" name="email">
+</fieldset>
+<br>
+<fieldset>
+	<legend>Your Review:</legend>
+	<br>
+	<form action="http://www.example.com/profile.php">
+		How did you hear about us?
+		<select name="fonte">
+			<option value="google">Google</option>
+			<option value="facebook">Facebook</option>
+			<option value="other">Other</option>
+		</select>
+	<p>
+		Would you visit again?
+		<br>
+		<input type="radio" name="visit-again" value="yes" checked="checked">Yes
+		<input type="radio" name="visit-again" value="no">No
+		<input type="radio" name="visit-again" value="maybe">Maybe
+	</p>
+	<p>
+		Comments:
+		<br>
+		<textarea cols="50" rows="4" name="comments" placeholder="Insert your comments here..."></textarea>
+	</p>
+		<input type="checkbox" name="email-updates" checked=""> Sign me up for email updates
+		<br>
+		<input type="submit" value="Submit review">
+</form>
+
+</fieldset>
+
+
+</body>
+</html>

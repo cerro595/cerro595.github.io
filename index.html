@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prova moduli</title>
+	<meta charset="utf-8">
+	<!-- CAPITOLO MODULI -->
+</head>
+<body>
+	<!-- FORM USERNAME -->
+	<form action="http://www.example.com/subscribe.php">
+		<p>
+			Username:
+			<input type="text" name="username" size="15" maxlength="30">
+		</p>
+	</form>
+	<!-- FORM PASSOWRD -->
+	<form>
+		<p>
+			Password:
+			<input type="Password" name="password" size="15" maxlength="30">
+		</p>
+	</form>
+	<!-- FORM AREA DI TESTO -->
+	<form>
+		<p>
+			What did you think of this gig?
+		</p>
+			<textarea name="comments" cols="20" rows="4" placeholder="Enter you text here..."></textarea>
+	</form>
+	<!-- PULSANTI DI OPZIONI -->
+	<form action="http://www.example.com/profile.php">
+	<p>
+		Please select your favorite genre:
+		<br>
+		<input type="radio" name="genre" value="rock" checked="checked"> Rock
+		<input type="radio" name="genre" value="pop"> Pop
+		<input type="radio" name="genre" value="jazz"> Jazz
+	</p>		
+	</form>
+	<!-- CASELLE DI SELEZIONE -->
+	<form action="http://www.example.com/profile.php">
+		<p>Please select yout favorite music service(s):</p>
+		<br>
+		<input type="checkbox" name="service" value="itunes" checked="checked"> iTunes
+		<input type="checkbox" name="service" value="lastfm"> Last.fm
+		<input type="checkbox" name="service" value="spotify"> Spotifys
+	</form>
+	<!-- DROPDOWN MENU -->
+	<form action="http://www.example.com/profile.php">
+	<p>What device do you listen to music on?</p>
+	<select name="devices" size="5">
+		<option value="ipod">iPod</option>
+		<option value="radio">Radio</option>
+		<option value="smartphone">Smartphone</option>
+		<option value="computer">Computer</option>
+		<option value="boh">Boh</option>
+	</select>		
+	</form>
+	<!-- CASELLA PER INVIO DI FILE -->
+	<form action="http://www.example.com/profile.php" method="post">
+		<p>Upload your song in MP3 format:</p>
+		<input type="file" name="user-song">
+		<br>
+		<input type="submit" value="Upload">
+	</form>
+	<!-- PULSANTE DI INVIO -->
+	<form action="http://www.example.com/profile.php">
+		<p>Subscribe to newsletter:</p>
+		<input type="email" name="email">
+		<input type="submit" name="subscribe" value="Subscribe">
+	</form>
+	<!-- IMMAGINI PER PULSANTI -->
+	<form action="http://www.example.com/profile.php">
+		<p>Subscribe to our mailing list:</p>
+		<input type="url" name="website">
+		<input type="submit" src="images/subscribe.png" width="100" height="35">	
+	</form>
+	<!-- -->
+	<label>Age: <input type="text" name="age" placeholder="Insert your age"></label>
+	<br>
+	Gender:
+	<input id="female" type="radio" name="gender" value="f">
+	<label for="female">Female</label>
+	<input id= "male" type="radio" name="gender" value="m">
+	<label for="male">Male</label>
+	<!-- -->
+	<fieldset>
+		<legend>Contact details</legend>
+		<label>Email: <br>
+			<input type="text" name="email"></label><br>
+		<label>Mobile: <br>
+			<input type="text" name="mobile"></label><br>
+		<label>Telephone: <br>
+			<input type="text" name="telephone"></label><br>
+		<form>
+			<input type="submit" name="subscribe">
+		</form>
+	</fieldset>
+	<!-- -->
+	<form action="http://www.example.com/login/" method="post">
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username" required="required"> <br>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" required="required"><br>
+		<input type="submit" name="subscribe" value="Submit">
+	</form>
+	<!-- -->
+	<form action="http://www.example.com/bookings/" method="post">
+		<label for="depart">Departure date:</label>
+		<input type="date" name="depart" id="depart">	
+		<input type="submit" value="Submit">
+	</form>
+	<br>
+    <ul>
+    <li> <a href="page2.html">Next page</a></li>
+   </ul>
+       
+</body>
+</html>
